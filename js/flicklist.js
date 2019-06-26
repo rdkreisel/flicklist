@@ -57,9 +57,6 @@ function render() {
 	var movieTitle = $("<p></p>").text(movie.original_title);
 
 
-
-		// TODO 4
-		// the list item should include a button that says "Add to Watchlist"
 	var button = $('<button></button>').text('Add to Watchlist').click(function() {
 		model.watchlistMoview.push(movie);
 		render();
@@ -67,7 +64,10 @@ function render() {
 
 	var viewMovie = $('<li></li>').append(movieTitle).append(button);
 
-	$('#section-browse ul').append(viewMovie);		
+	$('#section-browse ul').append(viewMovie);
+		// TODO 4
+		// the list item should include a button that says "Add to Watchlist"
+		
 		// TODO 5
 		// when the button is clicked, this movie should be added to the model's watchlist and render() should be called again
   });
