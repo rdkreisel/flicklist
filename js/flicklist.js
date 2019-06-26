@@ -1,23 +1,16 @@
-
-
 $(document).ready(function() {
   discoverMovies(render);
 });
-
-
 
 var model = {
   watchlistItems: [],
   browseItems: []
 }
 
-
 var api = {
   root: "https://api.themoviedb.org/3",
   token: "1f3a1b4dc7b65103c28bb46941c8dfc0" // TODO 0 add your api key
 }
-
-
 /**
  * Makes an AJAX request to /discover/movie endpoint of the API
  *
@@ -36,8 +29,6 @@ function discoverMovies(callback) {
     }
   });
 }
-
-
 /**
  * Makes an AJAX request to the /search/movie endpoint of the API, using the 
  * query string that was passed in
@@ -47,7 +38,6 @@ function discoverMovies(callback) {
  */
 function searchMovies(searchTerm, callback) {
   console.log("searching for movies with '" + searchTerm + "' in their title...");
-
   // TODO 9
   // implement this function as described in the comment above
   // you can use the body of discoverMovies as a jumping off point
